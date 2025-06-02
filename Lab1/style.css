@@ -10,25 +10,45 @@ body {
 }
 
 header {
-    background: url('https://img.freepik.com/free-photo/close-up-student-reading-book_23-2148888822.jpg') no-repeat center center/cover;
-    height: 100vh;
-    color: rgb(255, 254, 254);
-    background-color: rgba(125, 167, 28, 0.884);
-    /* Orange with 30% opacity */
-    opacity: 0.9;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-
-    padding: 0 20px;
+  position: relative;
+  height: 100vh;
+  color: white;
+  
+  display: flex;
+  flex-direction: column;
+  
+  padding: 0 20px;
+  overflow: hidden;
+  z-index: 1;
 }
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://img.freepik.com/free-photo/close-up-student-reading-book_23-2148888822.jpg') no-repeat center center/cover;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(7, 7, 8, 0.651); 
+  z-index: -1;
+}
+
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    
 
+}
+.header-content {
+    padding: 20px 10%;
 }
 
 nav ul {
@@ -55,14 +75,14 @@ header p {
 }
 
 .email-form input {
-    padding: 10px;
-    width: 250px;
+    padding: 15px;
+    width: 350px;
     border: none;
     border-radius: 5px 0 0 5px;
 }
 
 .email-form button {
-    padding: 10px;
+    padding: 15px;
     border: none;
     background: orange;
     color: white;
