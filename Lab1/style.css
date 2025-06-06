@@ -92,8 +92,7 @@ header p {
 
 .features,
 .highlight,
-.testimonial,
-footer {
+.testimonial {
     text-align: center;
     padding: 50px 20px;
 }
@@ -145,11 +144,7 @@ footer {
     margin-bottom: 20px;
 }
 
-footer {
-    background: #333;
-    color: white;
-    padding: 40px 20px;
-}
+
 
 
 
@@ -192,6 +187,71 @@ footer {
       line-height: 1.6;
     }       
 
+
+
+
+
+
+    footer {
+      background: url('https://static.vecteezy.com/system/resources/thumbnails/032/309/301/small/stressed-kid-studying-at-home-illustrating-the-pressures-of-study-challenges-and-homework-stress-photo.jpg') no-repeat center center/cover;
+      color: white;
+      position: relative;
+      padding: 100px 20px;
+    }
+
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .footer-content {
+      position: relative;
+      
+      padding: 0 10% ;
+      text-align: left;
+      z-index: 1;
+    }
+
+    .footer-content h2 {
+      font-size: 4rem;
+      font-weight: 300;
+      margin-bottom: 25px;
+      line-height: 1.4;
+    }
+
+    .subscribe-form {
+      display: flex;
+      max-width: 500px;
+    }
+
+    .subscribe-form input[type="email"] {
+      flex: 1;
+      padding: 14px 18px;
+      border: none;
+      font-size: 16px;
+    }
+
+    .subscribe-form button {
+      background-color: #ff4500;
+      color: white;
+      border: none;
+      padding: 14px 24px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .subscribe-form button:hover {
+      background-color: #e63e00;
+    }
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 1.5rem;
@@ -201,6 +261,26 @@ footer {
     .highlight {
         flex-direction: column;
     }
+
+
+    .footer-content h2 {
+        font-size: 24px;
+      }
+
+      .subscribe-form {
+        flex-direction: column;
+      }
+
+      .subscribe-form input,
+      .subscribe-form button {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .subscribe-form button {
+        margin-bottom: 0;
+      }
+    
 }
 
 
