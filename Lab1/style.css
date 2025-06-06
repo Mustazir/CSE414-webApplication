@@ -131,12 +131,13 @@ footer {
     color: white;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 90px;
     flex-wrap: wrap;
 }
 
 .highlight div {
     font-weight: bold;
+    font-size: 20px;
 }
 
 .testimonial blockquote {
@@ -149,6 +150,47 @@ footer {
     color: white;
     padding: 40px 20px;
 }
+
+
+
+
+
+ .video-section {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .video-section h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: 8px;
+    }
+
+    .video-description {
+      margin-top: 29px;
+      font-size: 20px;
+      text-align: center;
+      color: #555;
+      line-height: 1.6;
+    }       
 
 @media (max-width: 768px) {
     header h1 {
