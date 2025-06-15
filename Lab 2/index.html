@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trafalgar Healthcare</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.4.15/dist/full.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- kit fontawsome -->
+
+    <script
+      src="https://kit.fontawesome.com/779ab1933b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="font-sans">
+    <!-- Navbar -->
+    <div class="navbar bg-base-100 shadow-md  top-0 z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex-1">
+          <div class="flex gap-3">
+            <img src="Assets/logo.png" alt="" class="w-4" />
+            <a class="text-xl font-bold">Trafalgar</a>
+          </div>
+        </div>
+        <div class="hidden lg:flex gap-4">
+          <a class="btn btn-ghost btn-sm">Home</a>
+          <a class="btn btn-ghost btn-sm">Find a Doctor</a>
+          <a class="btn btn-ghost btn-sm">Apps</a>
+          <a class="btn btn-ghost btn-sm">Testimonials</a>
+          <a class="btn btn-ghost btn-sm">About Us</a>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="dropdown dropdown-end lg:hidden">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a>Home</a></li>
+            <li><a>Find a Doctor</a></li>
+            <li><a>Apps</a></li>
+            <li><a>Testimonials</a></li>
+            <li><a>About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero min-h-[80vh] px-4">
+      <div class="hero-content flex-col lg:flex-row-reverse gap-10 text-center">
+        <img
+          src="Assets/banner-top.svg"
+          class="w-full max-w-sm rounded-lg"
+          alt="Hero"
+        />
+        <div>
+          <h1 class="text-3xl md:text-5xl font-bold">
+            Virtual healthcare for you
+          </h1>
+          <p class="py-6 max-w-xl text-lg md:text-xl">
+            Trafalgar provides progressive, and affordable healthcare,
+            accessible on mobile and online for everyone.
+          </p>
+          <button
+            class="border border-blue-500 rounded-full px-8 py-2 text-blue-800 bg-transparent"
+          >
+            Consult Today
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-16 bg-white text-center px-4">
+      <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+      <p class="mb-10 max-w-2xl mx-auto text-sm md:text-base">
+        We provide to you the best choices. Adjust it to your health needs and
+        consult with our highly qualified doctors.
+      </p>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+        <!-- Repeatable Card -->
+        <div class="card bg-base-100 shadow">
+          <div class="card-body items-center text-center">
+            <i
+              class="fa-solid fa-magnifying-glass-plus text-6xl"
+              style="color: #2372fb"
+            ></i>
+            <h3 class="card-title">Search Doctor</h3>
+            <p>Choose your doctor from thousands of specialists</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow">
+          <div class="card-body items-center text-center">
+            <i
+              class="fa-solid fa-file-medical text-6xl"
+              style="color: #2372fb"
+            ></i>
+            <h3 class="card-title">Online Pharmacy</h3>
+            <p>Buy medicines with fast delivery</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow">
+          <div class="card-body items-center text-center">
+            <i
+              class="fa-solid fa-handshake-angle text-6xl"
+              style="color: #2372fb"
+            ></i>
+            <h3 class="card-title">Consultation</h3>
+            <p>Get the best recommendations from trusted doctors</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow">
+          <div class="card-body items-center text-center">
+            <i
+              class="fa-solid fa-hand-holding-heart text-6xl"
+              style="color: #2372fb"
+            ></i>
+            <h3 class="card-title">Details Info</h3>
+            <p>Receive detailed information about your health</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow">
+          <div class="card-body items-center text-center">
+            <i
+              class="fa-solid fa-suitcase-medical text-6xl"
+              style="color: #2372fb"
+            ></i>
+            <h3 class="card-title">Emergency Care</h3>
+            <p>24/7 emergency services for your family</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 shadow">
+          <div class="card-body items-center text-center">
+            <i
+              class="fa-solid fa-map-location-dot text-6xl"
+              style="color: #2372fb"
+            ></i>
+            <h3 class="card-title">Tracking</h3>
+            <p>Track your medical history and health data</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="border border-blue-500 mt-5 rounded-full px-8 py-2 text-blue-800 bg-transparent"
+      >
+        Learn More
+      </button>
+    </section>
+
+    <!-- Leading Section -->
+    <section class="py-16 px-4 max-w-6xl mx-auto">
+      <div
+        class="container mx-auto flex flex-col-reverse md:flex-row items-center gap-20 text-center"
+      >
+        <img
+          src="Assets/banner-mid.png"
+          class="rounded-lg shadow-lg w-full max-w-xl"
+          alt=""
+        />
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Leading healthcare providers</h2>
+          <p class="mb-4 max-w-lg text-sm md:text-base">
+            Trafalgar provides progressive, and affordable healthcare,
+            accessible on mobile and online for everyone.
+          </p>
+          <button
+            class="border border-blue-500 mt-5 rounded-full px-8 py-2 text-blue-800 bg-transparent"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download  Section -->
+
+    <section class="py-16 px-4 max-w-6xl mx-auto">
+      <div
+        class="container mx-auto flex flex-col-reverse md:flex-row-reverse items-center gap-20 text-center"
+      >
+        <img
+          src="Assets/banner-mid.png"
+          class="rounded-lg shadow-lg w-full max-w-xl"
+          alt=""
+        />
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Download our mobile apps</h2>
+          <p class="mb-4 max-w-lg text-sm md:text-base">
+            Our dedicated patient engagement app and web portal allow you to
+            access information instantaneously (no tedeous form, long calls, or
+            administrative hassle) and securely
+          </p>
+          <button
+            class="border border-blue-500 mt-5 rounded-full px-8 py-2 text-blue-800 bg-transparent"
+          >
+            Download
+            <i class="fa-solid fa-arrow-down" style="color: #2372fb"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials  -->
+    <section class="py-16 bg-base-200 px-4">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-10">What our customer are saying</h2>
+      
+          <div class="carousel w-full max-w-5xl mx-auto rounded-box">
+            <!-- Slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full ">
+              <div class="bg-white shadow p-6 rounded-box flex flex-col lg:flex-row items-center gap-6">
+                <!-- User Info -->
+                <div class="flex items-center gap-4 w-full lg:w-1/3 lg:mx-12">
+                  <img src="Assets/player-1.png" alt="Edward Newgate" class="w-16 h-16 rounded-full object-cover" />
+                  <div class="text-left">
+                    <h3 class="font-bold text-lg">Edward Newgate</h3>
+                    <p class="text-sm text-gray-500">Founder Circle</p>
+                  </div>
+                </div>
+      
+                <!-- Testimonial -->
+                <p class="text-sm text-gray-700 text-center lg:text-left w-full lg:w-2/3">
+                  “Our dedicated patient engagement app and web portal allow you to access information instantly and securely.”
+                </p>
+              </div>
+      
+              <!-- Arrows -->
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-5 lg:right-2 top-1/2">
+                <a href="#slide3" class="btn btn-circle bg-transparent border-none text-xl">❮</a>
+                <a href="#slide2" class="btn btn-circle bg-transparent border-none text-xl">❯</a>
+              </div>
+            </div>
+      
+            <!-- Slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+              <div class="bg-white shadow p-6 rounded-box flex flex-col lg:flex-row items-center gap-6">
+                <!-- User Info -->
+                <div class="flex items-center gap-4 w-full lg:w-1/3 lg:mx-12">
+                  <img src="Assets/player-2.png" alt="Edward Newgate" class="w-16 h-16 rounded-full object-cover" />
+                  <div class="text-left">
+                    <h3 class="font-bold text-lg">Edward Newgate</h3>
+                    <p class="text-sm text-gray-500">Founder Circle</p>
+                  </div>
+                </div>
+      
+                <!-- Testimonial -->
+                <p class="text-sm text-gray-700 text-center lg:text-left w-full lg:w-2/3">
+                  “Our dedicated patient engagement app and web portal allow you to access information instantly and securely.”
+                </p>
+              </div>
+      
+              <!-- Arrows -->
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-5 lg:right-2 top-1/2">
+                <a href="#slide1" class="btn btn-circle bg-transparent border-none text-xl">❮</a>
+                <a href="#slide3" class="btn btn-circle bg-transparent border-none text-xl">❯</a>
+              </div>
+            </div>
+      
+            <!-- Slide 3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+              <div class="bg-white shadow p-6 rounded-box flex flex-col lg:flex-row items-center gap-6">
+                <!-- User Info -->
+                <div class="flex items-center gap-4 w-full lg:w-1/3 lg:mx-12">
+                  <img src="Assets/player-3.png" alt="Edward Newgate" class="w-16 h-16 rounded-full object-cover" />
+                  <div class="text-left">
+                    <h3 class="font-bold text-lg">Edward Newgate</h3>
+                    <p class="text-sm text-gray-500">Founder Circle</p>
+                  </div>
+                </div>
+      
+                <!-- Testimonial -->
+                <p class="text-sm text-gray-700 text-center lg:text-left w-full lg:w-2/3">
+                  “Our dedicated patient engagement app and web portal allow you to access information instantly and securely.”
+                </p>
+              </div>
+      
+              <!-- Arrows -->
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-5 lg:right-2 top-1/2">
+                <a href="#slide2" class="btn btn-circle bg-transparent border-none text-xl">❮</a>
+                <a href="#slide1" class="btn btn-circle bg-transparent border-none text-xl">❯</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+    <!--Articles Section -->
+    <section class="py-16 bg-white px-4">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-10">Check out our latest article</h2>
+
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+          <!-- Article 1 -->
+          <div
+            class="card bg-base-100 shadow hover:shadow-xl transition duration-300"
+          >
+            <figure>
+              <img
+                src="Assets/airticle1.jpg"
+                alt="Lab Test"
+                class="w-full h-48 object-cover"
+              />
+            </figure>
+            <div class="card-body text-left">
+              <h3 class="card-title">
+                Disease detection, check up in the laboratory
+              </h3>
+              <p class="text-sm text-gray-600">
+                In this case, the role of the health laboratory is very
+                important to do a disease detection...
+              </p>
+              <div class="card-actions justify-start mt-4">
+                <a href="#" class="text-primary font-semibold">Read More →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div
+            class="card bg-base-100 shadow hover:shadow-xl transition duration-300"
+          >
+            <figure>
+              <img
+                src="Assets/article2.jpg"
+                alt="Herbal Medicine"
+                class="w-full h-48 object-cover"
+              />
+            </figure>
+            <div class="card-body text-left">
+              <h3 class="card-title">
+                Herbal medicines that are safe for consumption
+              </h3>
+              <p class="text-sm text-gray-600">
+                Herbal medicine is very widely used at this time because of its
+                very good effect on health...
+              </p>
+              <div class="card-actions justify-start mt-4">
+                <a href="#" class="text-primary font-semibold">Read More →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+          <div
+            class="card bg-base-100 shadow hover:shadow-xl transition duration-300"
+          >
+            <figure>
+              <img
+                src="Assets/article3.jpg"
+                alt="Facial Care"
+                class="w-full h-48 object-cover"
+              />
+            </figure>
+            <div class="card-body text-left">
+              <h3 class="card-title">Natural care for healthy facial skin</h3>
+              <p class="text-sm text-gray-600">
+                A healthy lifestyle should start from now and also for your skin
+                health. There are some tips...
+              </p>
+              <div class="card-actions justify-start mt-4">
+                <a href="#" class="text-primary font-semibold">Read More →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="border border-blue-500 mt-5 rounded-full px-8 py-2 text-blue-800 bg-transparent"
+        >
+          View All
+        </button>
+      </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="container mx-auto mb-4">
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title font-semibold">
+          How do I create an account?
+        </div>
+        <div class="collapse-content text-sm">
+          Click the "Sign Up" button in the top right corner and follow the
+          registration process.
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">
+          I forgot my password. What should I do?
+        </div>
+        <div class="collapse-content text-sm">
+          Click on "Forgot Password" on the login page and follow the
+          instructions sent to your email.
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title font-semibold">
+          How do I update my profile information?
+        </div>
+        <div class="collapse-content text-sm">
+          Go to "My Account" settings and select "Edit Profile" to make changes.
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer p-10">
+      <div class="lg:w-1/3">
+        <span class="footer-title">Trafalgar</span>
+        <p>
+          Trafalgar provides progressive, and affordable healthcare, accessible
+          on mobile and online for everyone.
+        </p>
+      </div>
+      <div class="w-1/4">
+        <span class="footer-title">Company</span>
+        <a class="link link-hover">About</a>
+        <a class="link link-hover">Testimonial</a>
+        <a class="link link-hover">Find a doctor</a>
+        <a class="link link-hover">Apps</a>
+      </div>
+      <div class="w-1/4">
+        <span class="footer-title">Regions</span>
+        <a class="link link-hover">Indonesia</a>
+        <a class="link link-hover">Hongkong</a>
+        <a class="link link-hover">Canada</a>
+        <a class="link link-hover">Singapore</a>
+      </div>
+      <div>
+        <span class="footer-title">Help</span>
+        <a class="link link-hover">Help Center</a>
+        <a class="link link-hover">Contact</a>
+        <a class="link link-hover">Support</a>
+      </div>
+    </footer>
+  </body>
+</html>
